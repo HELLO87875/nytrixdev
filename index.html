@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NytrixWorld</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Background video (starts muted until Start is pressed) -->
+    <video id="bg-video" loop playsinline poster="poster.jpg">
+      <source src="background.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Optional dark overlay for better readability -->
+    <div class="overlay"></div>
+
+    <main class="content" role="main" aria-label="Intro content">
+      <h1>Welcome to NytrixWorld</h1>
+      <p class="subtitle"></p>
+
+      <!-- Start button -->
+      <button id="start-btn" class="cta">Start</button>
+
+      <!-- Social links (hidden until start is pressed) -->
+      <div id="social-links" class="hidden">
+        <a href="https://tiktok.com/@nytrixwrld" target="_blank">TikTok</a>
+        <a href="https://instagram.com/shaked8681" target="_blank">Instagram</a>
+        <a href="https://discord.gg/nqxiv" target="_blank">Discord</a>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
